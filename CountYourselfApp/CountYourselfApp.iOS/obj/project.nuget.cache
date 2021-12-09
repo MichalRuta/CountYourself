@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "QHaZF34rhYtxUaE60H9tIO7TTQlBdXnsvyiqaQaYt5f10sNU9wkh9rBm1J5MeK0Ocdun+V+KsfqIZ6rbraYwCA==",
+  "success": true,
+  "projectFilePath": "/Users/admin2/Projects/CountYourself/CountYourselfApp/CountYourselfApp.iOS/CountYourselfApp.iOS.csproj",
+  "expectedPackageFiles": [
+    "/Users/admin2/.nuget/packages/system.numerics.vectors/4.5.0/system.numerics.vectors.4.5.0.nupkg.sha512",
+    "/Users/admin2/.nuget/packages/xamarin.essentials/1.6.1/xamarin.essentials.1.6.1.nupkg.sha512",
+    "/Users/admin2/.nuget/packages/xamarin.forms/5.0.0.2012/xamarin.forms.5.0.0.2012.nupkg.sha512"
+  ],
+  "logs": []
+}
