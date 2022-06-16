@@ -1,0 +1,19 @@
+﻿@model CountYourself.WebApp.Models.BillRaportModel
+
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+
+    <h1 class="display-4">Saldo: @Model.SumOfValues</h1>
+    <div>
+        @foreach (var item in Model.Bills)
+        {
+         <div>
+             @item.Name : @item.Value <br />
+         </div>       
+        }
+    </div>
+</div>
+
