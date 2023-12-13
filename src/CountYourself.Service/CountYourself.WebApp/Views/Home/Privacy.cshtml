@@ -1,0 +1,50 @@
+﻿@model CountYourself.WebApp.Models.BillModel
+
+@{
+    ViewData["Title"] = "Privacy Policy";
+}
+
+
+@using (Html.BeginForm("Privacy", "Home", FormMethod.Post))
+{
+    <table class="display-4" cellpadding="0" cellspacing="0">
+        <tr>
+            <th colspan="2" align="center">Dane o rachunku</th>
+        </tr>
+        <tr>
+            <td>PersonId: </td>
+            <td>
+                @Html.TextBoxFor(m => m.BillId)
+            </td>
+        </tr>
+        <tr>
+            <td>Nazwa/Opis: </td>
+            <td>
+                @Html.TextBoxFor(m => m.Name)
+            </td>
+        </tr>
+        <tr>
+            <td>Rodzaj: </td>
+            <td>
+                @Html.DropDownListFor(m => m.Type, new List<SelectListItem>
+               { new SelectListItem{Text="Jedzenie", Value="Jedzenie"},
+                 new SelectListItem{Text="Chemia", Value="Jedzenie"},
+                 new SelectListItem{Text="Restauracja", Value="Restauracja"},
+                 new SelectListItem{Text="Kawiarnia", Value="Kawiarnia"},
+                 new SelectListItem{Text="Leki", Value="Leki"},
+                 new SelectListItem{Text="Bzdety", Value="Bzdety"},
+                 new SelectListItem{Text="Inne", Value="Inne"}}, "Please select")
+            </td>
+        </tr>
+        <tr>
+            <td>Wartość: </td>
+            <td>
+                @Html.TextBoxFor(m => m.Value)
+            </td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><input type="submit" value="Submit" /></td>
+        </tr>
+    </table>
+}
